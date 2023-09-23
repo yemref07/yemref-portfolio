@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     analyze: true,
   },
 
-  ssr:true,
+  ssr:false,
   
   css: [
     '@/assets/css/main.css',
@@ -68,7 +68,6 @@ export default defineNuxtConfig({
     modules: [
       '@nuxt/image',
       'nuxt-og-image',
-      '@nuxtjs/i18n',
       //Search Engine Crawling - Privacy and Security - Bandwith Conservation
       ['@nuxtjs/robots', { 
         userAgent:'*',
@@ -120,10 +119,6 @@ export default defineNuxtConfig({
       }],
 
     ],
-
-    i18n: {
-      vueI18n: './i18n.config.ts' // if you are using custom path, default 
-    },
 
     image: {
       inject: true,
