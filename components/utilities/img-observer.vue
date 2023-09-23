@@ -13,7 +13,7 @@ export default {
 
     props: {
         observerOptions: {
-            type: Object
+            type: String
         }
     },
 

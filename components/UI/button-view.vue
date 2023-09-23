@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link :to="link" class="btn-view">
+    <nuxt-link :to="link" class="btn-view" :class="{'btn-view-hover':isItHover}">
       <slot></slot>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +25,10 @@ export default {
       type: String,
       required: true,
     },
+    isItHover:{
+      type:Boolean,
+      required:true
+    }
   },
 };
 </script>
@@ -50,5 +54,14 @@ export default {
   border-radius: 6px;
   outline: none;
   width: max-content;
+}
+
+
+.btn-view-hover {
+  position: absolute;
+  opacity: 1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
