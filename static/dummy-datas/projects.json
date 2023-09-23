@@ -1,0 +1,54 @@
+{
+    "Sercons Türkiye": {
+        "id":"1",
+        "title":"Sercons Türkiye",
+        "image":"/projects/sercons.webp",
+        "url":"https://sercons.com.tr/",
+        "desc":"I was responsible for the front-end development of this project.In the project, I included UI elements that would encourage the visitor to communicate, I included many mobile-oriented interface elements to provide comfort in mobile use. Since it is a project with SEO concerns, I focused on the correct image sizes, the use of heading tags in a correct hierarchy, descriptive titles and meta descriptions, providing mobile responsivity, Improve Page Load Speed especially Light House extension was really heplfull to this process."      
+    },
+
+    "Mesleğim Kültürüm": {
+        "id":"2",
+        "title":"Mesleğim Kültürüm",
+        "image":"/projects/meslegim-kulturum.webp",
+        "url":"https://meslegimkulturum.com/",
+        "desc":"I was responsible for the front-end development of this project, which was prepared with the support of the Ministry of Culture and Tourism. The designs for the web application were developed by the agency and developed as pixel perfect from the relevant Adope Illustrator files."      
+    },
+
+    "Rostest":{
+        "id":"3",
+        "title":"Rostest Türkiye",
+        "image":"/projects/rostest.webp",
+        "url":"https://www.rostest.com.tr/",
+        "desc":"In this project, for which I am responsible for front-end development, it was requested to be similar in design to the site of the organization operating in Russia in line with the wishes of our customer and to be coded as pixcel perfext. Compared to the site operating in Russia, it was developed using bootsrap 5 and a php-based CMS."     
+    },
+
+    "MovieApp":{
+        "id":"4",
+        "title":"Movie App Title",
+        "image":"/projects/placeholder.webp",
+        "url":"Demo Project",
+        "desc":"In this project, which is one of the demo projects I wrote to learn the basics of Nuxt, I used movie DB API bootsrap-vue and axios. In addition to the basic Nuxt features, I learned how to make API requests using nuxt built in methods and show the relevant UI elements by listening to the request status."
+    },
+
+    "KartepeSanat":{
+        "id":"5",
+        "image":"/projects/kartepe-sanat.webp",
+        "title":"Kartepe Sanat Okulu",
+        "url":"Demo Project",
+        "desc":""
+    },
+
+    "ncoach":{
+        "id":"6",
+        "image":"/projects/ncoach.webp",
+        "title":"NCoach",
+        "url":"Demo Project",
+        "desc":""
+    }
+
+
+
+  
+}
+
