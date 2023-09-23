@@ -1,6 +1,6 @@
 # Yemref Portfolio Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+You can visit my website  https://yemref.com and please share your review.
 
 ## Setup
 
