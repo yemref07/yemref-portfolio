@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     analyze: true,
   },
 
-  ssr:false,
+  ssr:true,
   
   css: [
     '@/assets/css/main.css',
