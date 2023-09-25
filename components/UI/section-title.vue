@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="col-12 text-center mb-5 p-5" :class="customStyle">
+    <div class="col-12 text-center mb-5 pad-5" :class="customStyle">
       <h1>
         <span class="contact-subtitle">{{subTitle}}</span>
       </h1>

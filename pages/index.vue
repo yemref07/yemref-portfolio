@@ -152,7 +152,6 @@ export default {
     };
 
     const observer = new IntersectionObserver(this.handleIntersection,observerOptions);
-    console.log(this.$refs.skillCard);
     observer.observe(this.$refs.skillCard);
   },
   methods:{
