@@ -306,7 +306,7 @@ ul li {
 .mobile-menu {
   background: #000000;
   padding: 80px 40px 70px 60px;
-  z-index: 999;
+  z-index: 1050;
   display: block;
   height: 100%;
   overflow: auto;
