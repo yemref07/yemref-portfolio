@@ -5,7 +5,7 @@
     >
       <div class="flex-item">
         <nuxt-link to="/">
-          <img src="../public/bot-menu-icons/home2.svg" alt=""  width='32' />
+          <img src="../public/bot-menu-icons/home2.svg" alt=""  width='32' height='32'/>
           <p>Home</p>
         </nuxt-link>
       </div>
@@ -17,13 +17,13 @@
       </div>
       <div class="flex-item">
         <nuxt-link to="projelerim">
-          <img src="../public/bot-menu-icons/project.svg" alt="" width='32'  />
+          <img src="../public/bot-menu-icons/project.svg" alt="" width='32' height='32' />
           <p>Projects</p>
         </nuxt-link>
       </div>
       <div class="flex-item">
         <nuxt-link to="/iletisim">
-          <img src="../public/bot-menu-icons/contact.svg" alt="" width='32'  />
+          <img src="../public/bot-menu-icons/contact.svg" alt="" width='32'  height='32'/>
           <p>Contact</p>
         </nuxt-link>
       </div>
