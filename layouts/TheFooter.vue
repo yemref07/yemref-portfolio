@@ -11,7 +11,7 @@
       </div>
       <div class="flex-item">
         <nuxt-link to="/hakkimda">
-          <img src="../public/bot-menu-icons/about.svg" alt=""  width='32' />
+          <img src="../public/bot-menu-icons/about.svg" alt=""  width='32' height='32'/>
           <p>About</p>
         </nuxt-link>
       </div>
