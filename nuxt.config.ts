@@ -82,6 +82,7 @@ export default defineNuxtConfig({
      'nuxt-simple-sitemap',
 
       ['nuxt-purgecss', {
+        enabled: ({ isDev, isClient }) => (!isDev && isClient),
         paths: [
           // 'components/**/*.vue',
           // 'layouts/**/*.vue',
