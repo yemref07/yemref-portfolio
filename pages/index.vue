@@ -167,9 +167,6 @@ export default {
           title:"Yunus Emre Fersiz"
         },
       ],
-      htmlAttrs: {
-        lang: 'en'
-      }
     };
   },
 
