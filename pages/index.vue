@@ -135,7 +135,7 @@
       <div class="container">
         <div class="row justify-content-between text-center">
           <div
-            class="col-sm-4"
+            class="col-md-4"
             v-for="(data, index) in skillCardDatas"
             :key="index"
           >
