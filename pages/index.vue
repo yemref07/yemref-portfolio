@@ -70,6 +70,7 @@
           <div class="col-md-5">
             <img
               src="/img/avatar2.webp"
+              srcset="/img/avatar2-480w.webp 480w, /img/avatar2-768w.webp 768w, /img/avatar2-1024w.webp 1024w"
               alt="Avatar"
               width="100%"
               height="auto"
