@@ -68,7 +68,7 @@
             </ul>
           </div>
           <div class="col-md-5">
-            <img src="/img/avatar2.webp" alt="Avatar" class="img-fluid" />
+            <img src="/img/avatar2.webp" alt="Avatar"  width="100%" height="auto" />
 
             <svg class="skill-icon1 skill-animation" viewBox="0 0 128 128">
               <path

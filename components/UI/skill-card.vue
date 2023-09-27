@@ -2,7 +2,7 @@
     <div>
         <div class="skill-card">
               <img :src="imgSource" :alt="title" :width="size">
-              <h3 class="skill-title">{{title}}</h3>
+              <h2 class="skill-title">{{title}}</h2>
               <p class="skill-desc"> 
                 {{desc}}
               </p>
