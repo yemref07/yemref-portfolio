@@ -19,10 +19,12 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      
       htmlAttrs: {
         lang: 'en'
       },
+      meta:[
+        { name: 'description', content: "A Frontend Developer with an open mind and a solution-oriented understanding I have a strong background in HTML, CSS, and JavaScript, I specialize in crafting responsive designs that look great on any device. I'm always eager to learn new techniques and stay up-to-date." }
+      ]
     }
   },
 
