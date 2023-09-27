@@ -1,4 +1,7 @@
 <template>
+    <Head>
+      <Title>Yunus Emre Fersiz</Title>
+    </Head>
     <TheHeader />
     <div>
         <slot />

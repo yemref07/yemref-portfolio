@@ -17,7 +17,7 @@
                   d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
                 />
               </svg>
-              <a href="mailto:yunus.fersiz@gmail.com" class="text-light ms-2"
+              <a href="mailto:yunus.fersiz@gmail.com" class="text-light ms-2" title="Yunus Emre Fersiz Email"
                 >yunus.fersiz@gmail.com</a
               >
             </div>
@@ -36,7 +36,7 @@
                   d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
                 />
               </svg>
-              <a href="tel:+905344997652" class="text-light ms-2"
+              <a href="tel:+905344997652" class="text-light ms-2" title="Yunus Emre Fersiz Telefon"
                 >05344997652</a
               >
             </div>
@@ -129,7 +129,7 @@
 
         <div class="d-flex d-md-none justify-content-between">
           <div class="flex-item">
-            <nuxt-link to="/">
+            <nuxt-link to="/" title="Anasayfa">
               <img
                 src="/logo.png"
                 alt="Yunus Emre Fersiz"
@@ -177,22 +177,22 @@
 
       <div class="d-flex flex-column mt-4">
         <div class="menu-item">
-          <nuxt-link to="/">Home</nuxt-link>
+          <nuxt-link to="/" title="Home Page">Home</nuxt-link>
         </div>
         <div class="menu-item">
-          <nuxt-link to="/hakkimda"> About </nuxt-link>
+          <nuxt-link to="/hakkimda" title="Yunus Emre Fersiz Hakkında"> About </nuxt-link>
         </div>
         <div class="menu-item">
-          <nuxt-link to="/projelerim"> My Works </nuxt-link>
+          <nuxt-link to="/projelerim" title="Yunus Emre Fersiz Çalışmaları"> My Works </nuxt-link>
         </div>
         <div class="menu-item">
-          <nuxt-link to="/iletisim"> Contact </nuxt-link>
+          <nuxt-link to="/iletisim" title="Yunus Emre Fersiz İletişim"> Contact </nuxt-link>
         </div>
       </div>
 
       <div class="d-flex just align-items">
         <div class="social-item">
-          <a href="" target="_blank">
+          <a href="/" target="_blank" title="Yunus Emre Fersiz Twitter">
             <img
               src="/social-icons/twitter.svg"
               alt="Yunus Emre Fersiz Twitter"
@@ -200,7 +200,7 @@
           </a>
         </div>
         <div class="social-item">
-          <a href="" target="_blank">
+          <a href="https://wa.me/5344997652" target="_blank" title="Yunus Emre Fersiz WhatsApp">
             <img
               src="/social-icons/whatsapp.svg"
               alt="Yunus Emre Fersiz WhatsApp"
@@ -208,7 +208,7 @@
           </a>
         </div>
         <div class="social-item">
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/yunus-emre-fersiz-91499b178/" target="_blank" title="Yunus Emre Fersiz Linkedin">
             <img
               src="/social-icons/linkedin.svg"
               alt="Yunus Emre Fersiz Linkedin"
@@ -216,7 +216,7 @@
           </a>
         </div>
         <div class="social-item">
-          <a href="" target="_blank">
+          <a href="https://github.com/yemref07" target="_blank" title="Yunus Emre Fersiz Github">
             <img
               src="/social-icons/github.svg"
               alt="Yunus Emre Fersiz Github Profil"
