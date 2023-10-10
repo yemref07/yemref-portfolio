@@ -129,7 +129,7 @@ export default defineNuxtConfig({
     ],
 
     gtag: {
-      id: 'GTM-5ZXX6L7Z'
+      id: 'G-MTCZMR48SW'
     },
 
     image: {
