@@ -80,6 +80,7 @@ export default defineNuxtConfig({
         Disallow:"iletisim"
       }],
      'nuxt-simple-sitemap',
+     'nuxt-gtag',
 
       ['nuxt-purgecss', {
         enabled: ({ isDev, isClient }) => (!isDev && isClient),
@@ -126,6 +127,10 @@ export default defineNuxtConfig({
       }],
 
     ],
+
+    gtag: {
+      id: 'GTM-5ZXX6L7Z'
+    },
 
     image: {
       inject: true,
