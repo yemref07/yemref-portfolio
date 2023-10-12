@@ -119,7 +119,7 @@
               </li>
      
               <li>
-                <buttonDownload source="pathofthe/yef.cv">
+                <buttonDownload source="/cv-tr.pdf">
                   Donwload CV
                 </buttonDownload>
               </li>
