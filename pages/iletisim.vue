@@ -260,7 +260,7 @@ export default {
     },
 
     isValidEmail(email) {
-      const emailRegex = /^(?:\+?90|0)?\d{10}$/;
+      const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
       return emailRegex.test(email);
     },
 
