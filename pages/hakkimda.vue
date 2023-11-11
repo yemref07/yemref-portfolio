@@ -11,14 +11,14 @@
                             <span class="fw-bold border-bot">Yunus Emre Fersiz.</span>
                     </h2>
                     <p class="mt-3 about-text">
-                        I'm a frontend developer with a passion and eagerness to learn. I enjoy developing simple, clean and user friendly applications. As an individual, I don't believe in creating flawless work but as a team, we can uncover our strengths and weaknesses. By learning from our shortcomings and filling in the gaps, we can bring out the best in our work. I believe that this approach can lead to better outcomes, not only in terms of work but also in our mental and social well-being as individuals.
+                        I'm a frontend developer with a passion and eagerness to learn. I enjoy developing simple, clean and user friendly applications. While I don't expect perfection as an individual, I firmly believe that, as a team, we can uncover our strengths and weaknesses. By learning from our mistakes and collaborating to fill the gaps, we can produce our best work. I'm convinced that this approach not only leads to better outcomes professionally but also contributes to our mental and social well-being as individuals.
                     </p>
                     
                 </div>
                 <div class="col-sm-4 text-center animate__animated animate__backInRight">
 
                     <div class="number-box mx-auto">
-                        <span class="exp-number">1</span>
+                        <span class="exp-number">2</span>
                     </div>
 
                     <p class="exp-text mt-3">
@@ -98,7 +98,7 @@
                                         <span class='text-muted fw-bold'>Intern Frontend Developer</span>
                                     </li>
                                     <li>
-                                        <p class="text-muted education-exp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quasi corrupti harum repellat consequuntur, sed assumenda impedit natus exercitationem dolorum.</p>
+                                        <p class="text-muted education-exp">I have actively contributed to the development of the front-end of the project, which is currently in progress</p>
                                     </li>
                                 </ul>
                             </li>
@@ -111,7 +111,7 @@
                                         <span class='text-muted fw-bold'>Junior Frontend Developer</span>
                                     </li>
                                     <li>
-                                        <p class="text-muted education-exp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quasi corrupti harum repellat consequuntur, sed assumenda impedit natus exercitationem dolorum.</p>
+                                        <p class="text-muted education-exp">In my role, I handle both existing and under-construction projects, focusing on front-end development and SEO. I also engage with customers to gather project details and user information, helping to clarify the project's story.</p>
                                     </li>
                                 </ul>
                             </li>
@@ -129,15 +129,16 @@
                 <h1 class="about-title mt-3 text-center">My Skills</h1>
 
                 <div class="col-md-6">
-                    <progressBar progressBarTitle="JavaScript" progressBarPercent="90" />
+                    <progressBar progressBarTitle="JavaScript" progressBarPercent="100" />
                     <progressBar progressBarTitle="HTML" progressBarPercent="100" />
-                    <progressBar progressBarTitle="CSS" progressBarPercent="90" />
+                    <progressBar progressBarTitle="CSS" progressBarPercent="100" />
                     <progressBar progressBarTitle="Bootstrap" progressBarPercent="100" />
+                    <progressBar progressBarTitle="Tailwind" progressBarPercent="100" />
                 </div>
 
                 <div class="col-md-6">
-         
-                    <progressBar progressBarTitle="Vue JS" progressBarPercent="60" />
+                    <progressBar progressBarTitle="Vue JS" progressBarPercent="70" />
+                    <progressBar progressBarTitle="Pinia" progressBarPercent="70" />
                     <progressBar progressBarTitle="Nuxt JS" progressBarPercent="70" />
                     <progressBar progressBarTitle="Statamic CMS" progressBarPercent="100" />
                     <progressBar progressBarTitle="React Native" progressBarPercent="40" />
@@ -147,7 +148,7 @@
 
             <div class="row mt-5">
                 <div class="col-12 text-center">
-                    <button class="btn  btn-cv hvr-shutter-out-horizontal">Download CV</button>
+                    <a class="btn  btn-cv hvr-shutter-out-horizontal" href="/cv-tr.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
