@@ -9,7 +9,8 @@
         />
 
         <div class="col-md-5">
-          <div class="d-flex mt-3">
+          <div class="d-flex mt-3 gap-3">
+            
             <div class="flex-item">
               <div class="i-location-box">
                 <svg
@@ -36,7 +37,7 @@
             </div>
           </div>
 
-          <div class="d-flex mt-3">
+          <div class="d-flex mt-3 gap-3">
             <div class="flex-item">
               <div class="i-phone-box">
                 <svg
@@ -65,7 +66,7 @@
             </div>
           </div>
 
-          <div class="d-flex mt-3">
+          <div class="d-flex mt-3 gap-3">
             <div class="flex-item">
               <div class="i-email-box">
                 <svg
@@ -277,6 +278,14 @@ export default {
   color: var(--ypurple);
 }
 
+.i-email {
+  color: var(--yorange);
+}
+
+.i-phone {
+  color: var(--ygreen);
+}
+
 .i-location-box {
   background-color: #ece8fd;
   padding: 20px;
@@ -284,19 +293,11 @@ export default {
   margin-right: 20px;
 }
 
-.i-email {
-  color: var(--yorange);
-}
-
 .i-email-box {
   background-color: #fedfd7;
   padding: 20px;
   border-radius: 50%;
   margin-right: 20px;
-}
-
-.i-phone {
-  color: var(--ygreen);
 }
 
 .i-phone-box {
@@ -318,6 +319,7 @@ export default {
 
 .info-title {
   font-size: 24px;
+  text-align: start;
 }
 
 
@@ -328,7 +330,6 @@ export default {
 .contact {
   position: relative;
 }
-
 
 
 @media only screen and (min-width: 600px) {
