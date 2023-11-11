@@ -31,7 +31,7 @@
   </div>
 
   <div class="footer">
-    <div class="container-fluid">
+    <div class="container-fluid copyright">
       <div class="row text-center align-items-center">
         <div class="col-6">
           Copyright © {{ currentYear }} yemref. All Rights Reserved.
@@ -86,4 +86,14 @@ export default {
 .flex-item {
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding-bottom: 90px;
+  }
+  .copyright{
+    font-size: 13px;
+  }
+}
+
 </style>
