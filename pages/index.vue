@@ -257,6 +257,7 @@ export default {
   background: url(/img/background-images/light.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .social-media li {
