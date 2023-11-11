@@ -349,6 +349,10 @@ ul li {
   margin-top: 40px;
 }
 
+.social-item img{
+  width: 40px;
+}
+
 .main-menu {
   padding-left: 75px;
   padding-right: 75px;
