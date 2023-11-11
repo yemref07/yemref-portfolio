@@ -6,6 +6,7 @@
           :title="sectionTitle"
           :subTitle="sectionSubTitle"
           :desc="sectionDesc"
+          class="w-75 mx-auto"
         />
 
         <projectsCard
@@ -35,7 +36,7 @@ export default {
             projectsData: projectsData,
             sectionTitle:"My Works & Demo Projects",
             sectionSubTitle:"Works & Demos",
-            sectionDesc:"Here are some of the projects I took part in the development process and web and mobile applications and that I developed for learning purposes."
+            sectionDesc:"I've actively contributed to the development of mostly web and mobile applications, including personal learning projects. For more details on my recent work, feel free to explore my GitHub account."
         }
     },
     mounted() {
@@ -43,8 +44,6 @@ export default {
     },
     computed: {
         computedSlug() {
-            //with using computed propery we achieve reactivity due to title variable and evert iteration we pass a slug value to our card compenent
-            //computed propery recognize his dependencies based on the return part
             return (title) => {
                 const slug = this.generateSlug(title);
                 return slug;
@@ -53,7 +52,6 @@ export default {
     },
     methods: {
         generateSlug(title) {
-            //genetaring slug due to title
             let slug = title.trim().toLowerCase();
             slug = slug.replace(/\s+/g, "-");
             slug = slug.replace(new RegExp(`[^a-z0-9${"-"}]`, 'g'), '');
