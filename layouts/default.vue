@@ -6,17 +6,20 @@
     <div>
         <slot />
     </div>
+    <quickGithub />
     <TheFooter />
 </template>
 
 <script>
 import TheFooter from './TheFooter.vue';
 import TheHeader from './TheHeader.vue';
+import quickGithub from '../components/UI/quick-github.vue';
 
 export default {
     components: {
         TheFooter,
-        TheHeader
+        TheHeader,
+        quickGithub
     }
 };
 </script>
