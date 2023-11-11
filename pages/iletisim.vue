@@ -32,7 +32,7 @@
 
             <div class="flex-item">
               <h3 class="info-title">Address</h3>
-              <p class="contact-info">Somewhere in world</p>
+              <p class="contact-info">Bursa Türkiye</p>
             </div>
           </div>
 
