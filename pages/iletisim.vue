@@ -10,7 +10,6 @@
 
         <div class="col-md-5">
           <div class="d-flex mt-3 gap-3">
-            
             <div class="flex-item">
               <div class="i-location-box">
                 <svg
@@ -59,9 +58,7 @@
             <div class="flex-item">
               <h3 class="info-title">Phone</h3>
               <p class="contact-info">
-                <a href="tel: +905344997652">
-                  +90 534 499 76 52
-                </a>
+                <a href="tel: +905344997652"> +90 534 499 76 52 </a>
               </p>
             </div>
           </div>
@@ -98,10 +95,8 @@
         <div class="col-md-7 justify-content-end">
           <form>
             <div class="contact-form">
-
               <customInput
                 inputType="text"
-                :error="errors.nameSurname"
                 ariaLabel="Name Surname"
                 v-model="formData.nameSurname"
                 placeHolder="Name Surname"
@@ -109,7 +104,6 @@
 
               <customInput
                 inputType="email"
-                :error="errors.email"
                 ariaLabel="Email Address"
                 v-model="formData.email"
                 placeHolder="Email"
@@ -117,7 +111,6 @@
 
               <customInput
                 inputType="tel"
-                :error="errors.phone"
                 ariaLabel="Phone Number"
                 v-model="formData.phone"
                 placeHolder="Phone"
@@ -125,12 +118,11 @@
 
               <customInput
                 inputType="text"
-                :error="errors.subject"
                 ariaLabel="Subject"
                 v-model="formData.subject"
                 placeHolder="Subject"
               />
-              
+
               <div class="input-group mb-3 w-sm-50 d-none">
                 <input
                   type="email"
@@ -145,14 +137,20 @@
                 <textarea
                   v-model="formData.message"
                   :class="{ error: errors.message }"
-                  :placeholder="errors.message ? errors.message : 'Your Message'"
+                  :placeholder="
+                    errors.message ? errors.message : 'Your Message'
+                  "
                   class="form-control custom-form"
                   aria-label="With textarea"
                 ></textarea>
               </div>
 
               <div class="d-grid gap-2 mt-3" style="padding: 5px">
-                <button class="btn-send" type="button" ref="btnSend" @click="handleSubmit">
+                <button
+                  class="btn-send"
+                  type="button"
+                  @click="handleSubmit"
+                >
                   Submit
                 </button>
               </div>
@@ -167,6 +165,7 @@
 <script>
 import sectionTitle from "../components/UI/section-title.vue";
 import customInput from "../components/custom-input.vue";
+import Swal from "sweetalert2";
 export default {
   data() {
     return {
@@ -195,7 +194,6 @@ export default {
     handleSubmit() {
       this.errors = {};
       if (this.validateForm() && !this.honeyPot) {
-
         setTimeout(() => {
           this.formData = {
             nameSurname: "",
@@ -204,56 +202,43 @@ export default {
             phone: "",
             message: "",
           };
-          this.$refs.btnSend.innerText = "The message has been sent successfully"
+          this.showSuccess("The message has been sent successfully")       
         }, 1000);
-
-        setTimeout(() => {
-          this.$refs.btnSend.innerText = "Submit"
-        }, 3000);
-
-
       }
     },
+
+    checkFormIsEmty() {
+      console.log(this.formData);
+      if (
+        this.formData.nameSurname === "" ||
+        this.formData.email === "" ||
+        this.formData.message === "" ||
+        this.formData.subject === "" ||
+        this.formData.phone === ""
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
     validateForm() {
-      const { nameSurname, email, message, subject, phone } = this.formData;
+      const { phone } = this.formData;
       let formIsValid = true;
       this.errors = {};
-      if (!nameSurname.trim()) {
-        this.errors.nameSurname = "Name Surname is required";
+
+      if (this.checkFormIsEmty()) {
+        this.showError("Please fill the required area");
         formIsValid = false;
       }
 
-      if (!message.trim()) {
-        this.errors.message = "Message is required";
+      if (this.isValidEmail() && !this.checkFormIsEmty()) {
+        this.showError("Invalid Email Format");
         formIsValid = false;
       }
 
-      if (!email.trim()) {
-        this.errors.email = "Email is required";
-        formIsValid = false;
-      } else {
-        if (this.isValidEmail()) {
-          this.errors.email = "Invalid Email Format";
-          formIsValid = false;
-        }
-      }
-
-      if (!subject.trim()) {
-        this.errors.subject = "Subject is required";
-        formIsValid = false;
-      }
-
-      if (!phone.trim()) {
-        this.errors.phone = "Phone Number is required";
-      } else {
-        if (!this.isValidPhoneNumber(phone)) {
-          this.errors.phone = "Invalid phone number for turkey";
-          formIsValid = false;
-        }
-      }
-
-      if (!message.trim()) {
-        this.errors.message = "Message is required";
+      if (!this.isValidPhoneNumber(phone) && !this.checkFormIsEmty()) {
+        this.showError("Invalid phone number for turkey");
         formIsValid = false;
       }
 
@@ -269,6 +254,24 @@ export default {
       const cleanedPhoneNumber = phoneNumber.replace(/[\s()-]/g, "");
       const turkishPhoneNumberRegex = /^(0|)?\d{10}$/;
       return turkishPhoneNumberRegex.test(cleanedPhoneNumber);
+    },
+
+    showError(param) {
+      Swal.fire({
+        title: "Error!",
+        text: param,
+        icon: "error",
+        confirmButtonText: "confirm",
+      });
+    },
+
+    showSuccess(param) {
+      Swal.fire({
+        title: "Success!",
+        text: param,
+        icon: "success",
+        confirmButtonText: "Cool",
+      });
     },
   },
 };
@@ -322,7 +325,6 @@ export default {
   text-align: start;
 }
 
-
 .contact-form {
   margin-top: 50px;
 }
@@ -330,7 +332,6 @@ export default {
 .contact {
   position: relative;
 }
-
 
 @media only screen and (min-width: 600px) {
   .contact-form {

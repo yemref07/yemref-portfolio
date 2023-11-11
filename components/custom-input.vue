@@ -6,7 +6,7 @@
         @input="$emit('update:modelValue', $event.target.value)"
         class="form-control custom-form"
         :class="{ error: error }"
-        :placeholder="error ? error : placeHolder"
+        :placeholder="placeHolder"
         :aria-label="ariaLabel"
         aria-describedby="basic-addon1"
       />
@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  props: ["modelValue", "error", "inputType", "ariaLabel", "placeHolder"],
+  props: ["modelValue", "inputType", "ariaLabel", "placeHolder"],
   emits: ["update:modelValue"],
 };
 </script>
