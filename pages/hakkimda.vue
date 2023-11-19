@@ -1,7 +1,7 @@
 <template>
     <section class="about">
         <div class="container mt-3">
-            <div class="row justify-content-center align-items-center p-5">
+            <div class="row justify-content-center align-items-center">
                 <sectionTitle title="Know Me More" subTitle="About Me" customStyle="animate__animated animate__backInDown" />
             </div>
 
