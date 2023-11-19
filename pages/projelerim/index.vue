@@ -6,7 +6,7 @@
           :title="sectionTitle"
           :subTitle="sectionSubTitle"
           :desc="sectionDesc"
-          class="w-75 mx-auto"
+          class="px-3 mx-auto"
         />
 
         <projectsCard
@@ -64,7 +64,4 @@ export default {
 
 
 
-.deneme {
-  font-size: 12px;
-}
 </style>
