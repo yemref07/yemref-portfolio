@@ -120,7 +120,7 @@
      
               <li>
                 <buttonDownload source="/cv-tr.pdf">
-                  Donwload CV
+                  Download CV
                 </buttonDownload>
               </li>
             </ul>
