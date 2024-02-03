@@ -119,7 +119,7 @@
               </li>
      
               <li>
-                <buttonDownload source="/cv-tr.pdf">
+                <buttonDownload source="/yunus-emre-fersiz.pdf">
                   Download CV
                 </buttonDownload>
               </li>
